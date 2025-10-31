@@ -1,5 +1,11 @@
 # Nexus Notes: Your Private, Offline-First, Feature-Rich Notebook
 
+<img src="https://img.shields.io/github/repo-size/sapthesh/Nexus-Notes?style=for-the-badge&logo=github&color=ff69b4&logoColor=white" alt="Repo Size"> <img src="https://img.shields.io/github/last-commit/sapthesh/Nexus-Notes?style=for-the-badge&logo=github&color=f4d03f&logoColor=white" alt="Last Commit"> 
+<a href="https://hits.sh/github.com/sapthesh/Nexus-Notes/"><img alt="Hits" src="https://hits.sh/github.com/sapthesh/Nexus-Notes.svg?style=for-the-badge"/></a>
+<a href="https://hits.sh/github.com/sapthesh/Nexus-Notes/"><img alt="Hits" src="https://hits.sh/github.com/sapthesh/Nexus-Notes.svg?view=today-total&style=for-the-badge&color=fe7d37"/></a>
+[![License](https://img.shields.io/badge/License-MIT-green.svg?style=for-the-badge)](LICENSE)
+[![Version](https://img.shields.io/badge/Version-0.1-blue.svg?style=for-the-badge)]()
+
 **Nexus Notes** is a sophisticated, browser-based, offline-first application for managing bookmarks and notes. It is designed with privacy, performance, and a rich user experience at its core. All data is stored exclusively in your browser's local storage, ensuring it is always private, instantly accessible without an internet connection, and entirely under your control.
 
 ---
