@@ -1,0 +1,5 @@
+{
+  "name": "Nexus Notes: Offline Bookmark & Note Manager",
+  "description": "An advanced, offline-first application for managing bookmarks and notes directly in your browser. All data is stored locally, ensuring privacy and availability without an internet connection. Features rich text editing for notes, powerful tagging, and instant search.",
+  "requestFramePermissions": []
+}
