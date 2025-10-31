@@ -1,52 +1,69 @@
-# Nexus Notes: Offline Bookmark & Note Manager
+# Nexus Notes: Your Private, Offline-First, Feature-Rich Notebook
 
-**Nexus Notes** is an advanced, offline-first, browser-based application for managing bookmarks and notes with a focus on privacy, speed, and a clean user experience. All your data is stored directly in your browser's local storage, ensuring it's always available, even without an internet connection, and never leaves your device.
-
----
-
-## ✨ Key Features
-
--   **📴 Offline-First:** Works completely offline. All data is stored locally in your browser's `localStorage`. No internet connection is needed after the initial load.
--   **🔒 Privacy Focused:** Your data is yours. Nothing is ever sent to a server.
--   **📚 Unified Management:** Keep both rich-text notes and web bookmarks in one organized place.
--   **✍️ Rich Text Editor:** A powerful [Quill.js](https://quilljs.com/) editor for notes, supporting various formatting options like headers, lists, code blocks, links, and more.
--   **🏷️ Powerful Tagging:** Organize items with multiple tags for flexible categorization and quick filtering.
--   **🔍 Advanced Fuzzy Search:** An intelligent search that finds what you're looking for, even with typos, using the Levenshtein distance algorithm. Search by title, content, or tags.
--   **🎛️ Bulk Actions:** Efficiently manage multiple items at once. Select several items to delete them or add tags in a single action.
--   **📱 Responsive Design:** A clean, modern UI that works seamlessly across desktop, tablet, and mobile devices.
--   **🌓 Light & Dark Modes:** Automatically adapts to your system's theme and allows for manual switching.
--   **⇅ Sorting & Filtering:** Easily sort items by title, creation date, or last update. Filter your view to see all items, just bookmarks, just notes, or items with a specific tag.
--   **🌐 Automatic Favicon Fetching:** Bookmarks are automatically enhanced with their website's favicon for easy visual identification.
+**Nexus Notes** is a sophisticated, browser-based, offline-first application for managing bookmarks and notes. It is designed with privacy, performance, and a rich user experience at its core. All data is stored exclusively in your browser's local storage, ensuring it is always private, instantly accessible without an internet connection, and entirely under your control.
 
 ---
 
-## 🛠️ Tech Stack
+## ✨ Core Philosophy & Features
 
--   **Frontend:** [React](https://reactjs.org/) (with Hooks) & [TypeScript](https://www.typescriptlang.org/)
--   **Styling:** [Tailwind CSS](https://tailwindcss.com/) for a utility-first styling workflow.
--   **Rich Text Editing:** [Quill.js](https://quilljs.com/)
--   **Data Storage:** Browser `localStorage` API.
--   **Icons:** Custom SVG icons.
--   **Build:** No build step required; runs directly in the browser using ES modules and CDN-hosted dependencies.
+Nexus Notes is built on three pillars: absolute privacy, offline-first reliability, and powerful, intuitive features.
+
+#### 🔒 100% Offline & Private
+-   **Local-First Storage:** All data—notes, bookmarks, tags—is stored directly in your browser's `localStorage`. Nothing is ever transmitted to a server.
+-   **Always Available:** Access and manage your information anytime, anywhere, with or without an internet connection.
+-   **You Own Your Data:** Your information never leaves your device.
+
+#### ✍️ Advanced Note-Taking & Organization
+-   **Powerful Rich Text Editor:** The integrated [Quill.js](https://quilljs.com/) editor supports a full range of formatting: headers, lists, bold, italics, links, images, code blocks, blockquotes, and more.
+-   **Internal Note Linking:** Create your own personal wiki. Seamlessly link notes to each other directly from the editor to build a connected web of knowledge.
+-   **Auto-Saving Drafts:** Never lose your train of thought. Unsaved changes to notes are automatically persisted as a draft and restored the next time you open them.
+-   **Flexible Tagging:** Organize items with multiple tags. The sidebar allows for quick filtering by any tag, and the search function understands tags.
+-   **Custom Views & Sorting:** Instantly filter your view to see all items, just notes, or just bookmarks. Sort your content by creation date, last update time, or title (A-Z, Z-A).
+
+#### 🔍 Intelligent Search & Management
+-   **Advanced Fuzzy Search:** Find what you need instantly, even with typos. The search leverages the Levenshtein distance algorithm to intelligently match titles, content, and tags, highlighting your query in the results.
+-   **Efficient Bulk Actions:** An intuitive selection mode allows you to manage multiple items at once. Select several items to add tags or delete them in a single action.
+-   **Smart Bookmark Handling:** Bookmarks are automatically enhanced with their website's favicon for quick visual recognition, along with quick-action buttons to copy the URL or open it in a new tab.
+
+#### 🎨 Deep Personalization
+-   **Customizable Themes:** Choose from a clean **Light** theme, an eye-friendly **Dark** theme, or a high-visibility **High-Contrast** mode for accessibility.
+-   **Accent Colors:** Personalize the UI by choosing from a palette of 20+ accent colors to match your style.
+
+#### 💾 Complete Data Control
+-   **Import & Export:** Easily back up your entire database to a portable JSON file or restore it at any time. Your data is never locked in.
+-   **Demo Data:** Load a set of sample items to explore all of the app's features right away.
+-   **Danger Zone:** For a fresh start, you have the power to permanently delete all data in a single click.
+
+---
+
+## 🛠️ Technical Deep Dive & Stack
+
+Nexus Notes is built with modern web technologies, carefully chosen to create a robust, zero-dependency client-side application.
+
+-   **Frontend Framework:** **[React](https://reactjs.org/) (v19) with Hooks** and **[TypeScript](https://www.typescriptlang.org/)** for a modern, type-safe, and component-based architecture.
+-   **Styling:** **[Tailwind CSS](https://tailwindcss.com/)** provides a utility-first framework for rapid, responsive, and consistent UI development. Themes are managed via CSS variables for instant switching without a page reload.
+-   **Rich Text Editing:** **[Quill.js](https://quilljs.com/)** is used for its powerful, extensible, and reliable rich text editing capabilities.
+-   **Data Storage:** The browser's **`localStorage` API** is used as the database, making the application inherently offline and private.
+-   **Search Algorithm:** Fuzzy search is implemented using a custom **Levenshtein distance** function, which calculates the difference between two strings to provide typo-tolerant search results.
+-   **No Build Step:** The application runs directly in the browser using **ES Modules**, an `importmap` for dependency management, and CDN-hosted libraries. This simplifies setup and development—there is no need for Node.js, npm, or a bundler like Webpack.
 
 ---
 
 ## 🚀 Getting Started
 
-Since Nexus Notes is a fully client-side application, getting started is incredibly simple.
+Getting started with Nexus Notes is incredibly simple, as there is no installation or build process required.
 
 1.  **Download the Files:** Clone this repository or download the project files as a ZIP.
-2.  **Open in Browser:** Open the `index.html` file in any modern web browser (like Chrome, Firefox, Safari, or Edge).
+2.  **Open in Browser:** Open the `index.html` file in any modern web browser (e.g., Chrome, Firefox, Safari, Edge).
 
-That's it! The application will be running locally. You can start adding notes and bookmarks immediately.
+That's it! The application is now running locally. You can begin adding notes and bookmarks immediately.
 
-### Hosting
-
-To host your own instance, simply deploy the project files to any static hosting service, such as:
-
+### Hosting Your Own Instance
+To host your own version, simply deploy the project files to any static hosting service, such as:
 -   [GitHub Pages](https://pages.github.com/)
 -   [Netlify](https://www.netlify.com/)
 -   [Vercel](https://vercel.com/)
+-   [Cloudflare Pages](https://pages.cloudflare.com/)
 
 ---
 
@@ -54,25 +71,29 @@ To host your own instance, simply deploy the project files to any static hosting
 
 ```
 /
-├── components/          # React components (Cards, Modals, Header, etc.)
+├── components/          # React components
 │   ├── icons/           # SVG icon components
 │   ├── BulkTagModal.tsx
+│   ├── ConfirmationModal.tsx
 │   ├── Header.tsx
 │   ├── ItemCard.tsx
 │   ├── ItemList.tsx
 │   ├── ItemModal.tsx
+│   ├── LinkNoteModal.tsx
 │   ├── Notification.tsx
+│   ├── SettingsModal.tsx
 │   ├── Sidebar.tsx
 │   ├── SortControl.tsx
 │   └── ThemeToggle.tsx
 ├── hooks/               # Custom React hooks
 │   ├── useLocalStorage.ts
 │   └── useTheme.ts
-├── App.tsx              # Main application component with core logic
-├── index.html           # The entry point of the application
-├── index.tsx            # Renders the React application
+├── App.tsx              # Main application component with core logic and state management
+├── demoData.ts          # Sample data for the application
+├── index.html           # The HTML entry point with Tailwind config and theme loader
+├── index.tsx            # Renders the React application into the DOM
 ├── metadata.json        # Project metadata
-├── types.ts             # TypeScript type definitions
+├── types.ts             # TypeScript type definitions for all data structures
 └── readme.md            # You are here!
 ```
 
@@ -80,10 +101,10 @@ To host your own instance, simply deploy the project files to any static hosting
 
 ## 🤝 Contributing
 
-Contributions are welcome! If you have ideas for new features, bug fixes, or improvements, feel free to open an issue or submit a pull request.
+Contributions are welcome! If you have ideas for new features, bug fixes, or performance improvements, please feel free to open an issue to discuss it or submit a pull request.
 
 ---
 
 ## 📄 License
 
-This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
+This project is licensed under the MIT License. See the LICENSE file for details.
